@@ -1,0 +1,129 @@
+html { 
+  background: url(../assets/uber.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    overflow-x: hidden;
+    height: 100%;
+
+}
+.header {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    position: fixed;
+    height: 60px!important;
+    overflow: hidden;
+    z-index: 10;
+}
+.main {
+    display: block;
+    height: 100%;
+
+
+}
+.mainInner{
+    
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+
+.middle{
+    vertical-align: middle;
+ 
+}
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  color:black;
+  font-weight: 100;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: #276EF1;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+
+.nav > .nav-btn {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+
+}
+.nav > .nav-btn > label {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 13px;
+}
+.nav > .nav-btn > label:hover, .nav  #nav-check:checked ~ .nav-btn > label {
+  background-color: #276EF1;
+  color:white;
+}
+.nav > .nav-btn > label:hover{
+  color:white !important;
+}
+
+.nav > .nav-links {
+  position: absolute;
+  display: block;
+  width: 100%;
+  background-color: white;
+  height: 0px;
+  transition: all 0.3s ease-in;
+  overflow-y: hidden;
+  top: 50px;
+  left: 0px;
+  z-index: 10000;
+}
+
+.nav > #nav-check:not(:checked) ~ .nav-links {
+  height: 0px;
+}
+.nav > #nav-check:checked ~ .nav-links {
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+}
+.nav-links p{
+  padding:20px;
+}

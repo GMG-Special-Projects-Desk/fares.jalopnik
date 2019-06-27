@@ -124,6 +124,8 @@ html {
   height: calc(100vh - 50px);
   overflow-y: auto;
 }
-.nav-links p{
-  padding:20px;
+.nav-links div{
+    padding:20px;
+    overflow: scroll;
+
 }

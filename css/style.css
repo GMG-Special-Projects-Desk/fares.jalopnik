@@ -25,6 +25,7 @@ html {
 
 
 }
+
 .mainInner{
     
     height: 100%;
@@ -32,7 +33,14 @@ html {
     text-align: center;
 }
 
-
+.banner h2{
+  background: white;
+    padding: 10px;
+    margin-top: 150px;
+    border: 2px solid #276EF1;
+    font-size: 15px;
+    text-align: left;
+}
 .middle{
     vertical-align: middle;
  
@@ -93,7 +101,6 @@ html {
 .nav > .nav-btn > label {
   display: inline-block;
   width: 50px;
-  height: 50px;
   padding: 13px;
 }
 .nav > .nav-btn > label:hover, .nav  #nav-check:checked ~ .nav-btn > label {
